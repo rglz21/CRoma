@@ -8,11 +8,17 @@ boton.addEventListener("click", (evento) => {
     let correlativos2 = new Set(textarea2.split('\n').map(line => line.trim()));
     let correlativosFaltantes = [];
 
-    correlativos1.forEach(correlativo => {
+   /* correlativos1.forEach(correlativo => {
         if (!correlativos2.has(correlativo) && !isNaN(correlativo)) {
             correlativosFaltantes.push(correlativo);
         }
+    });*/
+    correlativos1.forEach(correlativo => {
+        if (!correlativos2.has(correlativo)) {
+            correlativosFaltantes.push(correlativo);
+        }
     });
+
 
     document.getElementById("resultado").innerText = `** RESULTADOS:
 	total de correlativos: ${textarea1.split('\n').length}
