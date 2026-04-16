@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador de Datos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-dark border-2 mb-4">
+        <div class="container justify-content-center">
+            <div class="navbar-nav gap-5">
+                <!-- <a class="nav-link fw-bold text-dark" href="#">Datos Billrun</a>
+                <a class="nav-link fw-bold text-dark" href="#">Conteo tablas</a>
+                <a class="nav-link fw-bold text-danger" href="#">Este es el menu</a> -->
+            </div>
+        </div>
+    </nav>
+
+    <div class="container p-4 bg-white border border-dark border-3 mb-5" style="max-width: 1000px;">
+        <h2 class="text-center mb-5 fw-normal">Pega las capturas de pantallas</h2>
+
+        <div class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <label class="fw-bold">Datos de "Revenue"</label>
+                </div>
+                <div class="col-md-8">
+                    <textarea id="inputCaja1" class="form-control border-dark border-2" rows="3" placeholder=""></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <label class="fw-bold">Datos de "Subscribers Count"</label>
+                </div>
+                <div class="col-md-8">
+                    <textarea id="inputCaja2" class="form-control border-dark border-2" rows="3" placeholder=""></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <label class="fw-bold">Datos de "Bill Suppressed"</label>
+                </div>
+                <div class="col-md-8">
+                    <textarea id="inputCaja3" class="form-control border-dark border-2" rows="3" placeholder=""></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center my-4">
+            <button onclick="procesarTodo()" class="btn btn-dark btn-lg px-5 border-2 shadow-sm">Procesar Datos</button>
+        </div>
+
+        <div class="border border-dark border-2 p-0 bg-white">
+            <div class="border-bottom border-dark border-2 p-2 bg-light">
+                <h5 class="text-center m-0">Retorno de datos</h5>
+            </div>
+            <div id="outputContainer" class="p-4" style="min-height: 200px;">
+                <p class="text-muted text-center italic">Los resultados aparecerán aquí al procesar...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.main-container {
+    max-width: 900px;
+    border-radius: 8px;
+}
+
+textarea {
+    resize: none;
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+textarea::placeholder {
+    color: red !important;
+    font-weight: bold;
+    text-align: center;
+    line-height: 4; /* Centra el placeholder verticalmente */
+}
+
+.min-vh-25 {
+    min-height: 200px;
+}
